@@ -4,15 +4,13 @@
       box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
     }
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 
-    body {
-      background-color: #fff;
-    }
 
     /* Navigation Bar */
-    .navbar {
+    /* .navbar {
       font-family: serif !important;
-      background-color: #0e1b32;
+      background-color: #0E2148;
       padding: 15px 30px;
       color: white;
       display: flex;
@@ -27,6 +25,7 @@
     .navbar .logo {
       font-size: 1.5em;
       font-weight: bold;
+      font-family: "Limelight";
     }
 
     .navbar .menu {
@@ -38,11 +37,33 @@
       color: white;
       text-decoration: none;
       font-size: 0.95em;
-    }
+    } */
+   
+ .container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100% !important;
+    background-color: rgb(3, 3, 83);
+    padding: 0;
+    margin: 0;
+}
+.nav .nav-item .nav-link{
+    text-decoration: none;
+    color: white;
+    font-family: serif;
+    font-size: 1em;
+}
+.logo{
+    font-size: 1.5em !important;
+    color: white;
+    font-family: "Limelight" !important;
+}
 .hero-section {
   width: 100%;
   position: relative;
   overflow: hidden;
+  padding: 0px !important;
+  margin: 0px !important;
 }
 
 .hero {
@@ -54,7 +75,8 @@
   align-items: center;
   text-align: center;
   color: white;
-  padding: 60px 20px;
+  padding: 0;
+  margin:0;
   position: relative;
 }
 
@@ -149,6 +171,26 @@
   }
 }
 .my-custom-card {
-  background-color: #172d53 !important; /* light gray */
+  background-color: #4E6688 !important; /* light gray */
   color:white !important; /* optional: to control text color */
 }
+.my-custom-card button {
+  border: 1px solid white !important;
+  color: white !important;
+  /* background-color: transparent !important; */
+}
+.my-custom-card button:hover{
+  background-color: #0E2148;
+}
+.foot {
+  background-color:#0E2148 ;
+  color: white;
+}
+.foot .abc a{
+  color: white !important;
+}
+.foot .para {
+  color: white !important;
+  margin-left: 5px;
+}
+
