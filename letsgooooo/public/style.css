@@ -1,0 +1,150 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      font-family: serif !important;
+      background-color: #0e1b32;
+      padding: 15px 30px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .navbar .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.95em;
+    }
+.hero-section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero {
+  background: url('uploads/asset\ 0.jpeg') no-repeat center center/cover;
+  height: 400px; /* You can adjust this height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 60px 20px;
+  position: relative;
+}
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+
+    .search-box {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: white;
+      border-radius: 5px;
+      overflow: hidden;
+      max-width: 700px;
+      width: 90%;
+    }
+
+.search-box input {
+  padding: 15px;
+  border-radius: 2px;
+  border: none;
+  flex: 1;
+  min-width: 200px;
+  outline: none;
+  font-size: 13px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+/* Specifically style the second input for separation */
+.search-box input + input {
+  margin-left: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+    .search-box button {
+      background-color: #2ec4b6;
+      color: white;
+      border: none;
+      padding: 0 30px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .search-box button:hover {
+      background-color: #239f95;
+    }
+
+    @media (max-width: 768px) {
+  .hero {
+    height: 300px;
+    padding: 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .search-box input {
+    width: 90%;
+  }
+
+  .search-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    height: 250px;
+    padding: 30px 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+}
