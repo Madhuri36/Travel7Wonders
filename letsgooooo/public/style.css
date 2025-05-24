@@ -148,3 +148,7 @@
     font-size: 0.95rem;
   }
 }
+.my-custom-card {
+  background-color: #172d53 !important; /* light gray */
+  color:white !important; /* optional: to control text color */
+}
